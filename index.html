@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio-Vijay Varma</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0f9155cb51.js"
+      crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="Logo" class="logo" />
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="navMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Avin </span><br />martin From Ireland</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------about--------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I'm a passionate Frontend Developer and UI/UX Designer with
+              expertise in crafting beautiful, responsive, and user-centric
+              digital experiences. With a strong foundation in modern web
+              technologies and a keen eye for design, I transform complex
+              problems into elegant solutions. I thrive on creating interfaces
+              that not only look stunning but also provide seamless user
+              interactions and exceptional performance.
+            </p>
+            <div class="text-title">
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Web Developer</span> <br />Website design basic to
+                  advance.
+                </li>
+                <li>
+                  <span>Reasearch Analyst</span> <br />Strong knowledge of
+                  statistics and proficiency with<br />
+                  statistical software like SPSS, R, or Python.
+                </li>
+                <li>
+                  <span>UI/UX Designer</span> <br />Designing Web interface.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023- Self employed</span> <br />Freelancing with
+                  international client.
+                </li>
+                <li>
+                  <span>2023-2024</span> <br />
+                  Working in Startup as a Frontend Developer.
+                </li>
+                <li>
+                  <span>2024-current</span> <br />
+                  Working in Meta as AI lead researcher for AGI.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span> BATCH-2020</span> <br />Btech in AI from IIT Dholakpur
+                </li>
+                <li>
+                  <span>2023</span> <br />
+                  Masters in AI researcher From Heidelberg University .
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                I create modern, responsive websites that captivate your
+                audience. From concept to deployment, I build pixel-perfect
+                designs with clean code that scales beautifully across all
+                devices.
+              </p>
+              <a href="#">learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-paintbrush"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Designing intuitive interfaces that users love. I focus on user
+                research, wireframing, and prototyping to create engaging
+                digital experiences that drive results and satisfaction.
+              </p>
+              <a href="#">learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h2>App Design</h2>
+              <p>
+                Crafting mobile-first applications with stunning interfaces and
+                smooth interactions. I develop both iOS and Android experiences
+                that users keep coming back to.
+              </p>
+              <a href="#">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <h1 class="sub-title">Get In Touch</h1>
+        <p class="contact-subtitle">
+          Have a question or project in mind? Let's connect!
+        </p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Ireland</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:avin@example.com">avin@example.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+353123456789">+353 123 456 789</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Available Hours</h3>
+                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            onsubmit="sendMessage(event)">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" id="name" required />
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                required />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                placeholder="Your Phone (Optional)"
+                id="phone" />
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Subject" id="subject" required />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="Your Message"
+                id="message"
+                rows="6"
+                required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+            <span class="success-message" id="successMessage"></span>
+          </form>
+        </div>
+
+        <div class="social-links">
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon" title="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/quantumsavant"
+              class="social-icon"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="social-icon" title="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/vj_verma.qnt/"
+              class="social-icon"
+              title="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
