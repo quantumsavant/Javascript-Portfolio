@@ -90,7 +90,7 @@ function sendMessage(event) {
   };
 
   // Send Email
-  emailjs.send("template_62tc229", "service_fhhhyxm", templateParams)
+  emailjs.send( "service_fhhhyxm","template_62tc229", templateParams)
     .then(response => {
       console.log("Email sent:", response);
 
@@ -127,3 +127,4 @@ function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
